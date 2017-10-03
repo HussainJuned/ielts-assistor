@@ -1,11 +1,69 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimaryDark">#c5002b</item>
+        <item name="colorAccent">@color/colorSplash</item>
+    </style>
+
+    <style name="AppTheme.Red">
+        <item name="colorPrimary">#c5002b</item>
+        <item name="colorPrimaryDark">#c5002b</item>
+        <item name="android:background">#ffffff</item>
+        <item name="colorAccent">@color/colorSplash</item>
+    </style>
+
+    <style name="BackButton" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <item name="colorControlNormal">@color/colorWhite</item>
+    </style>
+
+
+    <style name="error" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/error_color</item>
+    </style>
+
+    <style name="AppTheme.CustomTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="colorPrimary">#eed369</item>
+    </style>
+
+    <style name="AppTheme.ListOfHeadlines" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#c5002b</item>
+        <item name="colorPrimaryDark">#c5002b</item>
+        <item name="colorAccent">@color/colorHeading1</item>
+        <item name="android:background">#ffffff</item>
+    </style>
+
+    <style name="MyCardViewStyle" parent="Theme.AppCompat.Light">
+        <item name="cardCornerRadius">15dp</item>
+        <item name="cardElevation">15dp</item>
+        <item name="cardBackgroundColor">@color/grey</item>
+    </style>
+
+    <style name="MyCardViewStyle1" parent="Theme.AppCompat.Light">
+        <item name="cardCornerRadius">15dp</item>
+        <item name="cardElevation">15dp</item>
+        <item name="cardBackgroundColor">@color/colorWhite</item>
+    </style>
+
+    <style name="MyCardViewStyle2" parent="Theme.AppCompat.Light">
+        <item name="cardCornerRadius">75dp</item>
+        <item name="cardElevation">20dp</item>
+        <item name="cardBackgroundColor">@color/colorWhite</item>
+    </style>
+
+    <style name="MyCardViewStyleCircle" parent="Theme.AppCompat.Light">
+        <item name="cardCornerRadius">75dp</item>
+        <item name="cardElevation">20dp</item>
+        <item name="cardBackgroundColor">@color/colorWhite</item>
+    </style>
+
+    <style name="RoundedCornerButton" parent="@style/Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">#1a237e</item>
+        <item name="colorControlHighlight">#673ab7</item>
     </style>
 
 </resources>

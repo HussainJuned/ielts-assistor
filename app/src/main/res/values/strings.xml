@@ -1,3 +1,59 @@
 <resources>
     <string name="app_name">IELTS Assistor</string>
+    <string name="fetching_tip_please_wait">Fetching Tip Please Wait</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="welcome_to_know_your_band_score">Welcome to know your band score!!!</string>
+    <string name="listening">Listening:</string>
+    <string name="reading">Reading:</string>
+    <string name="writing">Writing:</string>
+    <string name="speaking">Speaking:</string>
+    <string name="infoOnAttention">- It is a very common situation on IELTS Listening when a speaker gives some wrong information, then corrects himself and gives right information. This little trick is called <b>distraction</b>. You can get distracted by the information you hear the first time, thinking that it is correct. And that’s where a lot of IELTS candidates get caught! The speaker will then correct what he/she said, and give new information, which will be the right answer. Let\'s look at the examples below. Listen to the audio and answer the questions. You\'ve also given a transcript with an <u>underlined answer</u>.<b>Now listen carefully and answer the two questions by applying this tricks</b></string>
+    <string name="AttentionQstn1">Qstn 1: does a woman have any dietary restrictions?</string>
+    <string name="clickAttentionQstn2">Qstn :2 - write down the phone number</string>
+    <string name="tips1ForDistraction"> 1. <b>Listen</b> carefully even if you’ve heard the answer: it may be corrected and the right answer will come afterwards.</string>
+    <string name="tips2ForDistraction">  2. <b>Pay attention</b> to words-indicators: <b>“no”, “sorry”, “mistake”</b>. These words indicate that the wrong answer will be corrected soon.</string>
+    <string name="tips3ForDistraction">  3. <b> Keep in mind</b> that such distractions are very common for Part 1 of the listening test.</string>
+    <string name="tips4ForDistraction">  4. <b>Be careful</b> when you hear <b>numbers or names</b>: they often get corrected.</string>
+    <string name="AttentionQstn4"><b>Question 4: </b>Listen to the audio and answer the question below. Write <b>ONLY ONE NUMBER.</b></string>
+    <string name="endingMessage">That\'s the end of Attention drawing Training! Now, apply these tricks while solving Cambridge Books. BEST OF LUCK</string>
+    <string name="endingMessage2">That\'s the end of Scan Listening Questions Training! Now, apply these tricks while solving Cambridge Books. BEST OF LUCK</string>
+    <string name="endingMessage3">That\'s the end of Listening MCQ Question Training! Now, apply these tricks while solving Cambridge Books. BEST OF LUCK</string>
+    <string name="OverviewReadingQstnCarefully">To succeed in IELTS Listening, you should be very attentive. In this lesson we’ll train to read IELTS Listening questions carefully and avoid simple mistakes caused by lack of attention. Although this may sound too simple for you, in fact it’s very important to learn to read the questions carefully. <i>Quite often test-takers lose marks because they have read the question inattentively.</i></string>
+    <string name="OverviewMCQ"><b>Multiple choice questions</b> commonly occur in parts 2, 3 and 4 of IELTS Listening test.  In such questions you are given three (rarely four) answer choices, only one of which is correct.
+In this lesson you will learn <b>useful strategies and advice</b> to answer multiple choice questions in IELTS Listening test most effectively. You will also practice gained skills by answering tricky exercises with multiple choice questions.
+The transcript is provided for each audio. The correct answers are underlined in the transcripts. For the examples the transcript is shown, and for the exercises it is hidden. You can hide/show the transcripts as you wish.
+First, let’s learn some basic answering strategies and look at the examples below.
+</string>
+    <string name="tipsReadingQstnCarefully"><b><u>Tips: To avoid such mistakes, make sure you:</u></b></string>
+    <string name="tip1ReadingQstn">1. Write words if you’re asked to write words, and write numbers if you’re asked to write numbers.</string>
+    <string name="tip2ReadingQstn">2. Don’t exceed the word limit.</string>
+    <string name="tip3ReadingQstn">3. Answer the question with relevant information</string>
+    <string name="strategy1"><b><u>Strategy 1: don’t immediately pick up the first answer choice you hear.</u></b>
+You will often hear all of the answer choices in the audio. And only one of them is correct, the other two are meant to confuse you! So don’t straightaway choose the answer you hear the first as it may be incorrect. So listen carefully and wait until the speaker finishes giving information about the current question.
+Let’s try to use this strategy in the first example.
+</string>
+    <string name="strategy2"><b><u>Strategy 2: know that answers may come in a different order.</u>
+    Unlike other questions types in IELTS Listening, multiple choice questions don’t necessarily have their answer choices
+        coming in the same order as you hear them in the audio. So don’t worry if you first hear the third answer choice
+        - it doesn’t mean you’ve missed the previous two, as answers often come in a different order.
+    </b></string>
+
+    <string name="strategy3"><b><u>Strategy 3:  mind that answers are often paraphrased..</u>
+   You shouldn’t be waiting for a 100% match - the answer choice can differ from what you hear as it can be paraphrased.
+        To approach multiple choice questions effectively, look through the answer choices while listening to the question
+        being discussed. Do it to get a general idea of answer choices.
+    </b></string>
+
+    <string name="explanationMCQ1"><b>Answer is incorrect</b>\n<b>Explanation:</b> As you can hear, all three answer choices were mentioned.
+        However, the first two of them (“all alone” and “sitting on the ground”) are clearly incorrect,
+        because the speakers say that people often think that if a bird is all alone or sitting on the ground it
+        needs to be rescued, but it’s just learning to fly. The last sentence the speaker says gives us the correct answer:
+        “So we should emphasize that people should only attempt to rescue a bird that’s clearly injured”.
+        So the correct answer is <b>C.</b></string>
+
+    <string name="explanationMCQ2"><b>Explanation:</b>Moreover, the synonyms are used! The speaker gives the correct answer
+        when she says, “In fact, the best way of protection is preventing the disease by keeping yourself clean and washing
+        hands before you eat”. But instead of keeping yourself clean or washing hands we have a paraphrased answer choice
+        - following hygiene rules. So, the right answer is <b>A</b>.Beware that paraphrase is often used in such questions,
+        so you shouldn’t always look for an exact match.</string>
 </resources>
