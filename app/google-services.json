@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "202237240335",
+    "firebase_url": "https://ieltsassistor-c2f86.firebaseio.com",
+    "project_id": "ieltsassistor-c2f86",
+    "storage_bucket": "ieltsassistor-c2f86.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:202237240335:android:a1e093a34569a144",
+        "android_client_info": {
+          "package_name": "com.teamjsnbd.ieltsassistor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "202237240335-n9h8lbuqlqdtkbb8jcccthol4sma0igm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.teamjsnbd.ieltsassistor",
+            "certificate_hash": "cba8888e40f53b1dce0e654f9ed11b3585a51f16"
+          }
+        },
+        {
+          "client_id": "202237240335-6jtkvrvf8vrrc0dlegspfchk0r6mv5e2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjIDygDi2503EhNuE_i2JpFhIBd5Pm76U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "202237240335-6jtkvrvf8vrrc0dlegspfchk0r6mv5e2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
