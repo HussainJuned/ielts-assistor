@@ -1,5 +1,6 @@
 package com.teamjsnbd.ieltsassistor;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -40,10 +41,11 @@ public class UsefulInfoOfTrueFalseType extends AppCompatActivity {
         info.setText(information);
         tips.setText(tipsToAnswer);
     }
-    public void back(View view)
+    public void practiceTF(View view)
     {
-        /*Intent intent = new Intent(this, TrueFalseNGSelection.class);
-        startActivity(intent);*/
+        Intent intent = new Intent(this, PracticeTrueFalseType.class);
+        intent.putExtra("passage_no", 1);
+        startActivity(intent);
         finish();
     }
 }

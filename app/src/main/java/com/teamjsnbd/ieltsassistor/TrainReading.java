@@ -81,7 +81,7 @@ public class TrainReading extends AppCompatActivity implements View.OnClickListe
             Toast.makeText(getApplicationContext(),"Going to Classification selection activity", Toast.LENGTH_SHORT).show();
         }
         else if(v.getId() == R.id.buttonTrueFalseNG){
-            Intent intent = new Intent(getApplicationContext(), TrueFalseNGSelection.class);
+            Intent intent = new Intent(getApplicationContext(), TrueFalsePassagesListActivity.class);
             startActivity(intent);
             Toast.makeText(getApplicationContext(),"Going to True False NG activity", Toast.LENGTH_SHORT).show();
         }

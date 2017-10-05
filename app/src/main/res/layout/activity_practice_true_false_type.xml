@@ -10,16 +10,13 @@
     <android.support.v7.widget.CardView
         android:id="@+id/cardView17"
         android:layout_width="0dp"
-        android:layout_height="281dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_height="296dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/app_bar"
-        app:layout_constraintHorizontal_bias="0.0">
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp">
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
@@ -27,20 +24,18 @@
 
             <ScrollView
                 android:id="@+id/scrollView3"
-                android:layout_width="match_parent"
-                android:layout_height="206dp"
+                android:layout_width="0dp"
+                android:layout_height="204dp"
                 android:layout_marginEnd="8dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
                 android:layout_marginStart="8dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.913"
-                tools:layout_editor_absoluteX="5dp"
-                tools:layout_editor_absoluteY="69dp">
+                app:layout_constraintVertical_bias="0.913">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -51,26 +46,29 @@
                         android:id="@+id/stringPassageTF"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:padding="2dp"
                         android:text="stringPassageTF" />
 
                     <TextView
                         android:id="@+id/InfoOfTF"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:padding="2dp"
                         android:text="TextView" />
                 </LinearLayout>
             </ScrollView>
 
             <TextView
-                android:id="@+id/passagetitleTF"
+                android:id="@+id/passageTitleTF"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:layout_marginEnd="8dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="9dp"
+                android:padding="2dp"
                 android:text="The largest thing in the universe"
                 android:textSize="15sp"
                 android:textStyle="bold"
@@ -94,6 +92,7 @@
                     android:id="@+id/headlineMessage"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:padding="5dp"
                     android:text="Read the following passage and answer the question set:"
                     android:textColor="@android:color/white"
                     android:textSize="16sp"
@@ -114,13 +113,13 @@
 
     <android.support.v7.widget.CardView
         android:layout_width="0dp"
-        android:layout_height="166dp"
+        android:layout_height="154dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -148,6 +147,7 @@
                     android:id="@+id/questionsOfTF"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:padding="5dp"
                     android:text="TextView"
                     android:textColor="@android:color/white"
                     android:textSize="16sp"
@@ -155,8 +155,8 @@
             </android.support.v7.widget.CardView>
 
             <ScrollView
-                android:layout_width="0dp"
-                android:layout_height="110dp"
+                android:layout_width="331dp"
+                android:layout_height="159dp"
                 android:layout_marginBottom="8dp"
                 android:layout_marginTop="5dp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -164,24 +164,11 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/cardView22"
-                app:layout_constraintVertical_bias="0.166">
+                app:layout_constraintVertical_bias="0.093">
 
                 <android.support.constraint.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
-
-                    <Button
-                        android:id="@+id/nextQuestionTF"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="8dp"
-                        android:layout_marginTop="16dp"
-                        android:text="Next Question"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintLeft_toLeftOf="parent"
-                        app:layout_constraintRight_toRightOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/resultViewTF"
-                        app:layout_constraintVertical_bias="1.0" />
 
                     <TextView
                         android:id="@+id/resultViewTF"
@@ -239,6 +226,19 @@
             </ScrollView>
         </android.support.constraint.ConstraintLayout>
     </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/nextQuestionTF"
+        style="@style/RoundedCornerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Next Question"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
 
 </android.support.constraint.ConstraintLayout>
