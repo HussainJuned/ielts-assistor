@@ -27,7 +27,7 @@ import java.util.List;
 
 public class TipsPanel extends AppCompatActivity {
 
-    private FirebaseAuth firebaseAuth;
+    //private FirebaseAuth firebaseAuth;
     DatabaseReference tipsReference;
 
     EditText editTextTipsTitle;
@@ -45,7 +45,7 @@ public class TipsPanel extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tips_panel);
 
-        firebaseAuth = FirebaseAuth.getInstance();
+        //firebaseAuth = FirebaseAuth.getInstance();
         tipsReference = FirebaseDatabase.getInstance().getReference("Tips");
 
         tipsList = new ArrayList<>();
