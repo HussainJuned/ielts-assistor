@@ -1,57 +1,163 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true" >
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".UsefulInfoOfClassificationSelection"
-        android:orientation="vertical">
+    tools:context=".UsefulInfoOfTrueFalseType">
 
-        <TextView
-            android:id="@+id/titleTF"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="#0a0a02"
-            android:text="Useful Info and Strategies"
-            android:textSize="20dp"
-            android:layout_gravity="center"
-            />
 
-        <TextView
-            android:id="@+id/infoOnTF"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="dhur"
-            />
-        <TextView
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView20"
+        style="@style/MyCardViewStyle1"
+        android:layout_width="309dp"
+        android:layout_height="69dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
 
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="#0a0a02"
-            android:text="Tricks To Answer"
-            android:textSize="20dp"
-            android:layout_gravity="center"
-            />
-        <TextView
-            android:id="@+id/tipsOfTF"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="dhur"
-            />
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-        <Button
+            <Button
+                android:id="@+id/PracticeClassificationSelection"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="321dp"
+                android:layout_height="72dp"
+                android:layout_below="@+id/buttonClassification"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorHeading1"
+                android:elevation="2dp"
+                android:onClick="practiceTF"
+                android:text="Now Solve a Passage"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.875"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
 
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Back"
-            android:layout_gravity="center"
-            android:onClick="back"/>
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar"
+        android:layout_width="0dp"
+        android:layout_height="59dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"></include>
 
-    </LinearLayout>
-</ScrollView>
+    <android.support.v7.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="414dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/app_bar"
+        app:layout_constraintVertical_bias="0.062"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
 
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView27"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/colorHeading1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text="Read Usefull Info and Trick Before Training"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </android.support.v7.widget.CardView>
+
+            <ScrollView
+                android:layout_width="349dp"
+                android:layout_height="386dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginStart="2dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView27"
+                app:layout_constraintVertical_bias="0.0">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    tools:context="team_uganda.ieltsassistor.UsefulInfoOfClassificationSelection">
+
+                    <TextView
+                        android:id="@+id/titleTF"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Useful Info and Strategies"
+                        android:textColor="#0a0a02"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/infoOnTF"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="dhur" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:text="Tricks To Answer"
+                        android:textColor="#0a0a02"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tipsOfTF"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:paddingLeft="3dp"
+                        android:text="dhur" />
+
+                </LinearLayout>
+            </ScrollView>
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+
+
+</android.support.constraint.ConstraintLayout>

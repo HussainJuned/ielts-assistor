@@ -78,7 +78,8 @@
         <activity android:name=".ListeningDrawAttentionPractice" />
         <activity android:name=".ListeningReadingQuestionPractice" />
         <activity android:name=".ListeningMCQPractice" />
-        <activity android:name=".TipsPanel"></activity>
+        <activity android:name=".TipsPanel" />
+        <activity android:name=".TrueFalsePassagesListActivity"></activity>
     </application>
 
 </manifest>

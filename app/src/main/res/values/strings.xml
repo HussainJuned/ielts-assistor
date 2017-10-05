@@ -56,4 +56,44 @@ Let’s try to use this strategy in the first example.
         hands before you eat”. But instead of keeping yourself clean or washing hands we have a paraphrased answer choice
         - following hygiene rules. So, the right answer is <b>A</b>.Beware that paraphrase is often used in such questions,
         so you shouldn’t always look for an exact match.</string>
+
+    <string-array name="tfActionName">
+        <item>Useful Tips</item>
+        <item>Passage 1</item>
+        <item>Passage 2</item>
+        <item>Passage 3</item>
+    </string-array>
+
+    <string-array name="tfPassagesList">
+        <item>More than ten years ago, while taking the temperature of the universe, astronomers found something odd.
+            They discovered that a patch of sky, spanning the width of 20 moons, was unusually cold.
+            The astronomers were measuring the thermal radiation that bathes the entire universe,
+            a glowing relic of the big bang.To gaze at this cosmic microwave background,
+            or CMB, is to glimpse the primordial1 universe, a time when it was less than 400,000 years old.
+            The CMB blankets the sky, and looks pretty much the same everywhere,
+            existing at a feebly cold temperature of 2.725 kelvins -
+            just a couple degrees warmer than absolute zero.
+            But armed with the newly launched WMAP satellite,
+            the astronomers had set out to probe temperature variations as tiny as one part in 100,000.
+            Born from the quantum froth that was the universe a half-moment after the big bang,
+            those random fluctuations help scientists understand what the cosmos is made of and how it all came to be.</item>
+        <item>According to the Met Office, the UK had its warmest July day ever on July 1, when temperatures hit 36.7 C near London.
+            There were record heat waves in many countries including Spain, while the African continent had the second-warmest July
+            on record. While the impact of increased levels of carbon dioxide in the atmosphere is a key driver of rising
+            temperatures, another important factor is El Nino. This natural phenomenon, which appears as a large swathe of warm
+            water in the Pacific every few years, is known to push up global temperatures. In recent days there have been reports
+            that this year\'s El Nino will be particularly intense. As a result, many experts believe that 2015 will be the warmest
+            year on record by some margin. The seas have also been soaking up a large amount of heat, the NOAA said, with record
+            warming in large expanses of the Pacific and Indian Oceans Peter Stott, head of climate monitoring and attribution at
+            the UK Met Office, said: \"A strong El Nino is under way in the tropical Pacific and this, combined with the long-term
+            global warming trend, means there is the potential to see some very warm months throughout this year - as the new
+            figures for July appear to show\".
+        </item>
+        <item>
+            The standard stereotype among Americans is that Canadians are like Americans, except they say \'eh\' a lot and pronounce \'out and about\' as \'oot and aboot\'. Many Canadians, on the other hand, will tell you that Canadian English is more like British English, and as proof will hold aloft the spellings colour and centre and the name zed for the letter Z.
+  Canadian does exist as a separate variety of British English, with subtly distinctive features of pronunciation and vocabulary. It has its own dictionaries; the Canadian Press has its own style guide; the Editors\' Association of Canada has just released a second edition of Editing Canadian English. But an emblematic feature of Editing Canadian English is comparison tables of American versus British spellings so the Canadian editor can come to a reasonable decision on which to use… on each occasion. The core of Canadian English is a pervasive ambivalence.
+  Canadian history helps to explain this. In the beginning there were the indigenous people, with far more linguistic and cultural variety than Europe. They\'re still there, but Canadian English, like Canadian Anglophone society in general, gives them little more than desultory token nods. Fights between European settlers shaped Canadian English more. The French, starting in the 1600s, colonised the St Lawrence River region and the Atlantic coast south of it. In the mid-1700s, England got into a war with France, concluding with the Treaty of Paris in 1763, which ceded \'New France\' to England. The English allowed any French to stay who were willing to become subjects of the English King.
+  At the time of the Treaty of Paris, however, there were very few English speakers in Canada. The American Revolution changed that. The founding English-speaking people of Canada were United Empire Loyalists – people who fled American independence and were rewarded with land in Canada. Thus, Canadian English was, from its very beginning, both American – because its speakers had come from the American colonies – and not American, because they rejected the newly independent nation.
+  Just as the Americans sought to have a truly distinct, independent American version of English, the loyalists sought to remain more like England… sort of. These were people whose variety of English was already diverging from the British and vice versa: when the residents of London and its environs began to drop their r\'s and change some of their vowels people in certain parts of the United States adopted some of these changes, but Canadians did not. </item>
+    </string-array>
 </resources>
