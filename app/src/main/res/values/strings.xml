@@ -257,4 +257,76 @@ Let’s try to use this strategy in the first example.
         </item>
 
     </string-array>
+
+    <string name="sc_passage_1">
+        "Congenital heart experts from Spectrum Health Helen DeVos Children's Hospital have "
+            "successfully integrated two common imaging techniques to produce"
+            "a three-dimensional anatomic model of a patient's heart."
+            "\n\n"
+            " The 3D model printing of patients' hearts has become more common in recent years as part of an emerging, "
+            "experimental field devoted to enhanced visualization of individual cardiac structures and characteristics."
+            "But this is the first time the integration of computed tomography (CT) and three-dimensional transesophageal"
+            " echocardiography (3DTEE) has successfully been used for printing a hybrid 3D model of a patient's heart. "
+            "A proof-of-concept study authored by the Spectrum Health experts also opens the way for these techniques"
+            "to be used in combination with a third tool\n"
+            "\n"
+            " - magnetic resonance imaging (MRI).\n"
+            "\n"
+            " \"Hybrid 3D printing integrates the best aspects of two or more imaging modalities,"
+            " which can potentially enhance diagnosis, as well as interventional and surgical planning,"
+            "\" said Jordan Gosnell, Helen DeVos Children's Hospital cardiac sonographer,"
+            " and lead author of the study. \"Previous methods of 3D printing utilize only one imaging modality, "
+            "which may not be as accurate as merging two or more datasets.\""
+    </string>
+    <string name="sc_passage_2">
+          About a quarter of the world\'s population could have worms living in their guts. For many years experts have recommended treating large groups at risk of infection - but is this mass approach worthwhile?\n\n
+  Evidence showing the benefits of large-scale deworming projects has come under scrutiny in recent weeks - the debate has even been dubbed \"worm wars\". Parasites, such as roundworm, hookworm and whipworm could be living inside more than 1.5 billion people according to the World Health Organization (WHO).\n\n
+    People are usually infected through contaminated food but hookworm larvae can also burrow into feet, get into blood vessels and make their way to the heart and lungs. From there they can climb up to the oesophagus* and be swallowed, ending up in the gut where they grow.\n\n
+  Worms are not usually fatal but in serious cases they can cause abdominal pain, diarrhoea, loss of appetite, weight loss, fatigue and anaemia. In children, they can also contribute to malnutrition, stunted growth, and absences from school. A nurse gives deworming treatment to a boy in India\n\n
+*oesophagus - throat\n
+
+    </string>
+    <string name="sc_passage_3">
+          Keepers at the Smithsonian National Zoo in Washington DC only discovered Mei Xiang was pregnant during an ultrasound scan last week. The zoo said both cubs appeared healthy. Giant pandas are one of the most endangered species in the world and are notoriously hard to breed in captivity.\n\n
+  The National Zoo is one of only four zoos in the US to have pandas, which are on loan from China. Mei Xiang, who has two other offspring, is one of the zoo\'s star attractions and a Panda Cam on her enclosure crashed within seconds of the birth of the first cub being announced because of the volume of interest.\n\n
+  Female pandas are able to conceive for only two or three days a year, leading to a very low reproduction rate. Mei Xiang was artificially inseminated with sperm from the zoo\'s resident male Tian Tian and a panda named Hui Hui from Wolong, China. It will not be known for a while which is the father, or what sex the cubs are.\n\n
+  It has previously taken months before Mei Xiang\'s cubs have been introduced to the public. AP news agency reports that her first cub, Tai Shan, was born in 2005 and returned to China in 2010; her second cub, Bao Bao, is two years old on Sunday and still lives at the zoo. The panda population is threatened by habitat loss as land is increasingly inhabited by humans, with about 1,800 pandas left in the wild in China. However, the number living in the wild in China has gone up over the last 10 years.\n
+
+    </string>
+
+    <string-array name="sc_passage_list">
+        <item>@string/sc_passage_1</item>
+        <item>@string/sc_passage_2</item>
+        <item>@string/sc_passage_3</item>
+    </string-array>
+
+    <string name="sc_question_set_1">
+        1. A three-dimensional __________ of a patient\'s heart was created by integrating two imaging techniques.\n\n
+        2.Spectrum Health scientists have found a way to combine and use three techniques: computed tomography,
+        three-dimensional transesophageal echocardiography and _______.\n\n
+        3.The new method of 3D printing is more efficient than previous methods because it merges
+            two and more _______.\n\n
+        4.With more accurate 3D renderings and ______, \n
+        physicians will be able to better diagnose and treat heart disease.\n
+    </string>
+
+    <string name="sc_question_set_2">
+        1.	Now scientists doubt whether it is _________ to treat large groups of possibly infected people.\n\n
+        2.	The experts called the debate _________ .\n\n
+        3.	Hookworm larvae might make his way to the _________ and then be swallowed.\n\n
+        4.	Although dangerous, worms are rarely _________ .\n
+    </string>
+
+    <string name="sc_question_set_3">
+        1.	Mei Xiang pregnancy was discovered with an _________ last week.\n\n
+        2.	Pandas from the USA National Zoo are _________ from China.\n\n
+        3.	Due to the short conceiving period, pandas have a low ________ .\n\n
+        4.	Pandas are in danger because their lands are increasingly _________ .\n
+    </string>
+
+    <string-array name="sc_question_list">
+        <item>@string/sc_question_set_1</item>
+        <item>@string/sc_question_set_2</item>
+        <item>@string/sc_question_set_3</item>
+    </string-array>
 </resources>

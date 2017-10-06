@@ -1,11 +1,15 @@
 package com.teamjsnbd.ieltsassistor;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
 public class UsefulInfoOfSentenceCompletion extends AppCompatActivity {
+    Toolbar toolbar;
     private String information = "You should complete statements that paraphrase sentences from the text.\n" +
             "You're given a word limit.\n" +
             "Questions follow the order of the text.\n" +
@@ -47,6 +51,17 @@ public class UsefulInfoOfSentenceCompletion extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_useful_info_of_sentence_completion);
+        toolbar=(Toolbar) findViewById(R.id.app_bar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Useful info and tips");
+        getSupportActionBar().setSubtitle("Sentence Completion");
+
+        if (getSupportActionBar()!=null)
+        {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+            getSupportActionBar().setDisplayShowHomeEnabled(true);
+        }
+
         info = (TextView)findViewById(R.id.infoOnSentenceCompletion);
         tricks = (TextView)findViewById(R.id.tricksOfSentenceCompletion);
         tips = (TextView)findViewById(R.id.tipsOfSentenceCompletion);
@@ -55,10 +70,20 @@ public class UsefulInfoOfSentenceCompletion extends AppCompatActivity {
         tips.setText(tipsToanswer);
 
     }
-    public void back(View view)
+
+    public void practiceSC(View view)
     {
-        /*Intent intent = new Intent(this, SentenceCompletion.class);
-        startActivity(intent);*/
+        Intent i = new Intent(UsefulInfoOfSentenceCompletion.this, PracticeSentenceCompletion.class);
+        i.putExtra("passage_no", 1);
+        startActivity(i);
         finish();
+    }
+    /*Back button */
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        if (item.getItemId() == android.R.id.home)
+            finish();
+        return super.onOptionsItemSelected(item);
     }
 }

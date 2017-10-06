@@ -1,8 +1,8 @@
 package com.teamjsnbd.ieltsassistor;
 
 import android.graphics.Color;
-import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
@@ -65,8 +65,8 @@ public class ListOfHeadings extends AppCompatActivity implements AdapterView.OnI
 
         toolbar=(Toolbar) findViewById(R.id.app_bar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("Brand Score Calculator");
-        getSupportActionBar().setSubtitle("IELTS Assistor");
+        getSupportActionBar().setTitle("List Of Heading");
+        getSupportActionBar().setSubtitle("Reading Practice");
 
         if (getSupportActionBar()!=null)
         {
@@ -108,12 +108,12 @@ public class ListOfHeadings extends AppCompatActivity implements AdapterView.OnI
         spinner5.setAdapter(adapterOptions);
         spinner6.setAdapter(adapterOptions);
 
-        spinner1.setSelection(adapterOptions.NO_SELECTION, false);
+        /*spinner1.setSelection(adapterOptions.NO_SELECTION, false);
         spinner2.setSelection(adapterOptions.NO_SELECTION, false);
         spinner3.setSelection(adapterOptions.NO_SELECTION, false);
         spinner4.setSelection(adapterOptions.NO_SELECTION, false);
         spinner5.setSelection(adapterOptions.NO_SELECTION, false);
-        spinner6.setSelection(adapterOptions.NO_SELECTION, false);
+        spinner6.setSelection(adapterOptions.NO_SELECTION, false);*/
 
         spinner1.setOnItemSelectedListener(this);
         spinner2.setOnItemSelectedListener(this);
@@ -143,6 +143,9 @@ public class ListOfHeadings extends AppCompatActivity implements AdapterView.OnI
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 
         int selectedSpinnerId = parent.getId();
+        if(position == 0) {
+            return;
+        }
 
         switch (selectedSpinnerId) {
 

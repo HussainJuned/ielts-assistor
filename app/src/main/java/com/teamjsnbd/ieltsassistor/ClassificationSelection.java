@@ -17,7 +17,9 @@ public class ClassificationSelection extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_true_false_passages_list);
+
+        //dont be confused
+        setContentView(R.layout.activity_true_false_passages_list); //should be renamed to passageList view
 
         tfActionName = getResources().getStringArray(R.array.tfActionName);
 
