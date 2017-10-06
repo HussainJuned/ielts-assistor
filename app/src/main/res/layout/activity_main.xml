@@ -12,7 +12,18 @@
         layout="@layout/app_bar"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></include>
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="0dp"
+        android:layout_width="0dp"></include>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/AppTheme"
+        android:text="About IELTS"
+        android:textAllCaps="false"
+        android:onClick="about"
+        tools:layout_editor_absoluteY="103dp"
+        tools:layout_editor_absoluteX="179dp" />
 
     <android.support.v7.widget.CardView
         android:id="@+id/cardView1"
@@ -25,11 +36,11 @@
         android:layout_marginStart="8dp"
         app:cardBackgroundColor="@android:color/background_light"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.036"
+        app:layout_constraintHorizontal_bias="0.937"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.153">
+        app:layout_constraintVertical_bias="0.093">
 
         <Button
             android:id="@+id/ielts_calculator"
@@ -62,8 +73,8 @@
             style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:onClick="doTrainning"
-            android:background="@drawable/training_button" />
+            android:background="@drawable/training_button"
+            android:onClick="doTrainning" />
 
     </android.support.v7.widget.CardView>
 
@@ -73,7 +84,6 @@
         style="@style/MyCardViewStyle"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_marginBottom="0dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
