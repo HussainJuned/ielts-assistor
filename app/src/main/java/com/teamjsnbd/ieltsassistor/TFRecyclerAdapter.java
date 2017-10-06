@@ -65,6 +65,9 @@ public class TFRecyclerAdapter extends RecyclerView.Adapter<TFRecyclerAdapter.TF
                 } else if(className.equals("ClassificationSelection")){
                     Intent intent = new Intent(context, UsefulInfoOfClassificationSelection.class);
                     this.context.startActivity(intent);
+                } else if (className.equals("SentenceCompletion")) {
+                    Intent intent = new Intent(context, UsefulInfoOfSentenceCompletion.class);
+                    this.context.startActivity(intent);
                 }
 
             } else {
@@ -75,6 +78,10 @@ public class TFRecyclerAdapter extends RecyclerView.Adapter<TFRecyclerAdapter.TF
                         this.context.startActivity(intent);
                     } else if (className.equals("ClassificationSelection")) {
                         Intent intent = new Intent(context, PracticeClassificationSelection.class);
+                        intent.putExtra("passage_no", actionPosition);
+                        this.context.startActivity(intent);
+                    } else if (className.equals("SentenceCompletion")) {
+                        Intent intent = new Intent(context, PracticeSentenceCompletion.class);
                         intent.putExtra("passage_no", actionPosition);
                         this.context.startActivity(intent);
                     }
