@@ -46,6 +46,11 @@ public class MainActivity extends AppCompatActivity {
         alertDialogBox();
 
     }
+    public void about(View v)
+    {
+        Intent intent = new Intent(this, AboutIelts.class);
+        startActivity(intent);
+    }
 
     public void calculate(View v)
     {

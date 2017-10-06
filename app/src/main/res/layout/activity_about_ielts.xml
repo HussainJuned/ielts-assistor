@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.teamjsnbd.ieltsassistor.AboutIelts"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="whatisielts"
+        android:text="What is IELTS?"
+        tools:layout_editor_absoluteX="117dp"
+        tools:layout_editor_absoluteY="37dp" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="detailslistening"
+        android:text="Details on Listening"
+        tools:layout_editor_absoluteX="117dp"
+        tools:layout_editor_absoluteY="123dp" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="detailsreading"
+        android:text="Details on Reading"
+        tools:layout_editor_absoluteX="117dp"
+        tools:layout_editor_absoluteY="203dp" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="detailswriting"
+        android:text="Details on Writing"
+        tools:layout_editor_absoluteX="117dp"
+        tools:layout_editor_absoluteY="273dp" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="detailsspeaking"
+        android:text="Details on Speaking"
+        tools:layout_editor_absoluteX="117dp"
+        tools:layout_editor_absoluteY="352dp" />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="scoreingsystem"
+        android:text="Scoring System"
+        tools:layout_editor_absoluteX="134dp"
+        tools:layout_editor_absoluteY="443dp" />
+</LinearLayout>

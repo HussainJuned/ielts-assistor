@@ -79,7 +79,9 @@
         <activity android:name=".ListeningReadingQuestionPractice" />
         <activity android:name=".ListeningMCQPractice" />
         <activity android:name=".TipsPanel" />
-        <activity android:name=".TrueFalsePassagesListActivity"></activity>
+        <activity android:name=".TrueFalsePassagesListActivity" />
+        <activity android:name=".AboutIelts" />
+        <activity android:name=".IeltsDescription"></activity>
     </application>
 
 </manifest>
