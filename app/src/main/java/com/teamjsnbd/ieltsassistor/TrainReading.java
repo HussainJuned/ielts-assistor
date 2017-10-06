@@ -1,5 +1,6 @@
 package com.teamjsnbd.ieltsassistor;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -26,8 +27,7 @@ public class TrainReading extends AppCompatActivity implements View.OnClickListe
 
         toolbar=(Toolbar) findViewById(R.id.app_bar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("Practics MCQ Question");
-        getSupportActionBar().setSubtitle("Reading Practics");
+        getSupportActionBar().setTitle("Reading Practice");
 
         if (getSupportActionBar()!=null)
         {

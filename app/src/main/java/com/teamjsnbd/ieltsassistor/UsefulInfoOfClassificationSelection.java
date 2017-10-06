@@ -1,7 +1,8 @@
 package com.teamjsnbd.ieltsassistor;
 
-import android.os.Bundle;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
@@ -36,10 +37,11 @@ public class UsefulInfoOfClassificationSelection extends AppCompatActivity {
         info.setText(information);
         tricks.setText(trickToAnswer);
     }
-    public void back(View view)
+    public void practiceCS(View view)
     {
-        /*Intent intent = new Intent(this, ClassificationSelection.class);
-        startActivity(intent);*/
+        Intent intent = new Intent(this, PracticeClassificationSelection.class);
+        intent.putExtra("passage_no", 1);
+        startActivity(intent);
         finish();
     }
 }

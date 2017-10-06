@@ -17,10 +17,12 @@ public class TFRecyclerAdapter extends RecyclerView.Adapter<TFRecyclerAdapter.TF
 
     String[] actionName;
     Context context;
+    public static String className;
 
     public TFRecyclerAdapter(String[] actionName, Context context) {
         this.actionName = actionName;
         this.context = context;
+        className = context.getClass().getSimpleName();
     }
 
     @Override
@@ -55,14 +57,29 @@ public class TFRecyclerAdapter extends RecyclerView.Adapter<TFRecyclerAdapter.TF
         @Override
         public void onClick(View v) {
             int actionPosition = getAdapterPosition();
-            Toast.makeText(context, "you have clicked " + actionPosition, Toast.LENGTH_SHORT).show();
+            //Toast.makeText(context, "you are going " + className, Toast.LENGTH_SHORT).show();
             if (actionPosition == 0) {
-                Intent intent = new Intent(context, UsefulInfoOfTrueFalseType.class);
-                this.context.startActivity(intent);
+                if(className.equals("TrueFalsePassagesListActivity")){
+                    Intent intent = new Intent(context, UsefulInfoOfTrueFalseType.class);
+                    this.context.startActivity(intent);
+                } else if(className.equals("ClassificationSelection")){
+                    Intent intent = new Intent(context, UsefulInfoOfClassificationSelection.class);
+                    this.context.startActivity(intent);
+                }
+
             } else {
-                Intent intent = new Intent(context, PracticeTrueFalseType.class);
-                intent.putExtra("passage_no", actionPosition);
-                this.context.startActivity(intent);
+                {
+                    if(className.equals("TrueFalsePassagesListActivity")){
+                        Intent intent = new Intent(context, PracticeTrueFalseType.class);
+                        intent.putExtra("passage_no", actionPosition);
+                        this.context.startActivity(intent);
+                    } else if (className.equals("ClassificationSelection")) {
+                        Intent intent = new Intent(context, PracticeClassificationSelection.class);
+                        intent.putExtra("passage_no", actionPosition);
+                        this.context.startActivity(intent);
+                    }
+                }
+
             }
         }
     }
