@@ -12,12 +12,13 @@ import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-public class ListOfHeadings extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
+public class PracticeListOfHeadings extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
 
-    HeadingLibrary myHeadings = new HeadingLibrary();
+    HeadingLibrary myHeadings;
 
     private TextView paragraphView;
     private TextView headingsView;
+    private TextView lohPassageTitleView;
 
     private Spinner spinner1;
     private Spinner spinner2;
@@ -47,6 +48,7 @@ public class ListOfHeadings extends AppCompatActivity implements AdapterView.OnI
     private ArrayAdapter<String> adapterOptions;
     Toolbar toolbar;
 
+    int fetched_passage_number = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,17 +58,23 @@ public class ListOfHeadings extends AppCompatActivity implements AdapterView.OnI
         /*getSupportActionBar().setTitle(Html.fromHtml("<font color='#f5f138'>List Of Headings </font>"));
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#ffffff")));*/
 
+        fetched_passage_number = getIntent().getIntExtra("passage_no", 1);
+        toolbar=(Toolbar) findViewById(R.id.app_bar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Practice List Of Heading");
+        getSupportActionBar().setSubtitle("Passage " + fetched_passage_number);
+        fetched_passage_number--;
+
+        myHeadings = new HeadingLibrary(this);
 
         paragraphView = (TextView) findViewById(R.id.paragraphView);
         headingsView = (TextView) findViewById(R.id.headingsView);
+        lohPassageTitleView = (TextView) findViewById(R.id.lohPassageTitle);
 
-        paragraphView.setText(myHeadings.getParragraph());
-        headingsView.setText(myHeadings.getHeadings());
+        paragraphView.setText(myHeadings.getParragraph(fetched_passage_number));
+        headingsView.setText(myHeadings.getHeadings(fetched_passage_number));
+        lohPassageTitleView.setText(myHeadings.getPassageHeading(fetched_passage_number));
 
-        toolbar=(Toolbar) findViewById(R.id.app_bar);
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("List Of Heading");
-        getSupportActionBar().setSubtitle("Reading Practice");
 
         if (getSupportActionBar()!=null)
         {
@@ -151,7 +159,7 @@ public class ListOfHeadings extends AppCompatActivity implements AdapterView.OnI
 
             case R.id.spinner1:
                 String userAnswer = parent.getItemAtPosition(position).toString();
-                String corrAnswer = myHeadings.getAnswer(0);
+                String corrAnswer = myHeadings.getAnswer(fetched_passage_number, 0);
                 showResultA.setVisibility(View.VISIBLE);
 
                 if (userAnswer.equals(corrAnswer)) {
@@ -170,7 +178,7 @@ public class ListOfHeadings extends AppCompatActivity implements AdapterView.OnI
             case R.id.spinner2:
                 showResultB.setVisibility(View.VISIBLE);
 
-                if ((parent.getItemAtPosition(position).toString()).equals(myHeadings.getAnswer(1))) {
+                if ((parent.getItemAtPosition(position).toString()).equals(myHeadings.getAnswer(fetched_passage_number, 1))) {
                     showResultB.setText("Correct");
                     showResultB.setTextColor(Color.GREEN);
                     corrAnswerB.setVisibility(View.GONE);
@@ -179,14 +187,14 @@ public class ListOfHeadings extends AppCompatActivity implements AdapterView.OnI
                     showResultB.setText("Incorrect");
                     showResultB.setTextColor(Color.RED);
                     corrAnswerB.setVisibility(View.VISIBLE);
-                    corrAnswerB.setText("Correct Answer is: " + myHeadings.getAnswer(1));
+                    corrAnswerB.setText("Correct Answer is: " + myHeadings.getAnswer(fetched_passage_number, 1));
                 }
                 break;
 
             case R.id.spinner3:
                 showResultC.setVisibility(View.VISIBLE);
 
-                if ((parent.getItemAtPosition(position).toString()).equals(myHeadings.getAnswer(2))) {
+                if ((parent.getItemAtPosition(position).toString()).equals(myHeadings.getAnswer(fetched_passage_number, 2))) {
                     showResultC.setText("Correct");
                     showResultC.setTextColor(Color.GREEN);
                     corrAnswerC.setVisibility(View.GONE);
@@ -195,14 +203,14 @@ public class ListOfHeadings extends AppCompatActivity implements AdapterView.OnI
                     showResultC.setText("Incorrect");
                     showResultC.setTextColor(Color.RED);
                     corrAnswerC.setVisibility(View.VISIBLE);
-                    corrAnswerC.setText("Correct Answer is: " + myHeadings.getAnswer(2));
+                    corrAnswerC.setText("Correct Answer is: " + myHeadings.getAnswer(fetched_passage_number, 2));
                 }
                 break;
 
             case R.id.spinner4:
                 showResultD.setVisibility(View.VISIBLE);
 
-                if ((parent.getItemAtPosition(position).toString()).equals(myHeadings.getAnswer(3))) {
+                if ((parent.getItemAtPosition(position).toString()).equals(myHeadings.getAnswer(fetched_passage_number, 3))) {
                     showResultD.setText("Correct");
                     showResultD.setTextColor(Color.GREEN);
                     corrAnswerD.setVisibility(View.GONE);
@@ -211,14 +219,14 @@ public class ListOfHeadings extends AppCompatActivity implements AdapterView.OnI
                     showResultD.setText("Incorrect");
                     showResultD.setTextColor(Color.RED);
                     corrAnswerD.setVisibility(View.VISIBLE);
-                    corrAnswerD.setText("Correct Answer is: " + myHeadings.getAnswer(3));
+                    corrAnswerD.setText("Correct Answer is: " + myHeadings.getAnswer(fetched_passage_number, 3));
                 }
                 break;
 
             case R.id.spinner5:
                 showResultE.setVisibility(View.VISIBLE);
 
-                if ((parent.getItemAtPosition(position).toString()).equals(myHeadings.getAnswer(4))) {
+                if ((parent.getItemAtPosition(position).toString()).equals(myHeadings.getAnswer(fetched_passage_number, 4))) {
                     showResultE.setText("Correct");
                     showResultE.setTextColor(Color.GREEN);
                     corrAnswerE.setVisibility(View.GONE);
@@ -227,14 +235,14 @@ public class ListOfHeadings extends AppCompatActivity implements AdapterView.OnI
                     showResultE.setText("Incorrect");
                     showResultE.setTextColor(Color.RED);
                     corrAnswerE.setVisibility(View.VISIBLE);
-                    corrAnswerE.setText("Correct Answer is: " + myHeadings.getAnswer(4));
+                    corrAnswerE.setText("Correct Answer is: " + myHeadings.getAnswer(fetched_passage_number, 4));
                 }
                 break;
 
             case R.id.spinner6:
                 showResultF.setVisibility(View.VISIBLE);
 
-                if ((parent.getItemAtPosition(position).toString()).equals(myHeadings.getAnswer(5))) {
+                if ((parent.getItemAtPosition(position).toString()).equals(myHeadings.getAnswer(fetched_passage_number, 5))) {
                     showResultF.setText("Correct");
                     showResultF.setTextColor(Color.GREEN);
                     corrAnswerF.setVisibility(View.GONE);
@@ -243,7 +251,7 @@ public class ListOfHeadings extends AppCompatActivity implements AdapterView.OnI
                     showResultF.setText("Incorrect");
                     showResultF.setTextColor(Color.RED);
                     corrAnswerF.setVisibility(View.VISIBLE);
-                    corrAnswerF.setText("Correct Answer is: " + myHeadings.getAnswer(5));
+                    corrAnswerF.setText("Correct Answer is: " + myHeadings.getAnswer(fetched_passage_number, 5));
                 }
                 break;
 

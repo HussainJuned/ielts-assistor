@@ -1,6 +1,5 @@
 package com.teamjsnbd.ieltsassistor;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -67,7 +66,7 @@ public class TrainReading extends AppCompatActivity implements View.OnClickListe
             //finish();
         }
         else if(v.getId() == R.id.buttonListOfHeadings){
-            Intent intent = new Intent(getApplicationContext(), ListOfHeadings.class);
+            Intent intent = new Intent(getApplicationContext(), ListOfHeadingsPassageActivity.class);
             startActivity(intent);
         }
         else if(v.getId() == R.id.buttonSentenceCompletion){

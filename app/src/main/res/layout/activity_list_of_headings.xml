@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ListOfHeadings"
+    tools:context=".PracticeListOfHeadings"
     android:orientation="vertical">
 
     <include
@@ -70,11 +70,23 @@
                             tools:text="Read the following paragraphs and choose appropiate headings for each one." />
 
                         <TextView
+                            android:id="@+id/lohPassageTitle"
+                            android:layout_width="match_parent"
+                            android:text="Passage Titile"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
                             android:id="@+id/paragraphView"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="7dp"
                             android:text="TextView" />
+
+                        <TextView
+                            android:id="@+id/lohInstruction"
+                            android:text="@string/loh_solving_instruction"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
 
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
@@ -119,6 +131,8 @@
                             android:layout_height="wrap_content"
                             android:paddingLeft="7dp"
                             android:text="TextView" />
+
+
 
                     </LinearLayout>
                 </android.support.v7.widget.CardView>

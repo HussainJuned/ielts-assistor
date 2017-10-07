@@ -25,13 +25,15 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".SplashScreen">
+
+        </activity>
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
         <activity android:name=".IeltsCalculator" />
         <activity android:name=".TrainYourself" />
         <activity
@@ -51,7 +53,7 @@
         <activity android:name=".TrainReading" />
         <activity android:name=".MCQ" />
         <activity
-            android:name=".ListOfHeadings"
+            android:name=".PracticeListOfHeadings"
             android:label="List of Headings" />
         <activity
             android:name=".SentenceCompletion"
@@ -81,7 +83,9 @@
         <activity android:name=".TipsPanel" />
         <activity android:name=".TrueFalsePassagesListActivity" />
         <activity android:name=".AboutIelts" />
-        <activity android:name=".IeltsDescription"></activity>
+        <activity android:name=".IeltsDescription" />
+        <activity android:name=".ListOfHeadingsPassageActivity" />
+        <activity android:name=".UsefulInfoOfListOfHeadings"></activity>
     </application>
 
 </manifest>
