@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
         //Toast.makeText(getApplicationContext(), "Going to IeltsCalculator activity", Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(this, IeltsCalculator.class);
         startActivity(intent);
-        overridePendingTransition(R.anim.my_transition, R.anim.j_fade_out);
+        //overridePendingTransition(R.anim.my_transition, R.anim.j_fade_out);
     }
 
     public void doTrainning (View v)
@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
         //Toast.makeText(getApplicationContext(), "Going to Train Yourself activity", Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(this, TrainYourself.class);
         startActivity(intent);
-        overridePendingTransition(R.anim.j_fade_in, R.anim.j_fade_out);
+        //overridePendingTransition(R.anim.j_fade_in, R.anim.j_fade_out);
     }
 
     public void findTips(View v)

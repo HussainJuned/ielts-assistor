@@ -329,4 +329,123 @@ Let’s try to use this strategy in the first example.
         <item>@string/sc_question_set_2</item>
         <item>@string/sc_question_set_3</item>
     </string-array>
+
+    <string name="loh_paragraph_1">
+        (A) Australia\'s wildlife is unique. The vast majority of the animals that live there are not
+            " found anywhere else – and things were no different 1 million years ago during the Pleistocene:"
+            " the age of the super-sized mammal. Before humanity became Earth's undisputed superpower,"
+            " giant beasts of all shapes and sizes dominated every continent, but the Pleistocene mammals"
+            " of Australia were different. Some of them could grow to the size of small cars, or possessed "
+            " teeth longer than knife blades.\n"  "\n"
+            " (B) None of these animals survive today – although exactly why that\'s the case is a mystery. Humans,"
+            " with their advanced hunting techniques and use of fire to modify the landscape, may have played a"
+            " central role in the megafauna\'s disappearance, but this idea is still a matter of heated debate.\n"  "\n"
+            "(C.) Even if we cannot be sure that the arrival of Australian Aboriginals on the continent had catastrophic"
+            " effects on its native animals, it seems that the animals had a rather spiritual effect on the humans. The"
+            " Aboriginal mythological \"Dreamtime\" includes a cast of monstrous creatures, many of which bear a close"
+            " resemblance to some of the real-life monsters that once stalked Australia\'s plains. Are the myths based"
+            " in fact? Perhaps: after all, these creatures are far stranger than anything dreamed up by humans.\n"
+            "\n"
+            "(D) For instance, the two-tonnes weighting Diprotodon comfortably holds the title of largest marsupial ever."
+            " In size and appearance it looked superficially like a modern rhinoceros, but the Diprotodon seems to have"
+            "had a social lifestyle more like that of an elephant, another mammal with which it shares anatomical "
+            "similarities. What the Diprotodon most resembles, however, is exactly what it is: an enormous wombat."
+            "\n"
+            "(E) Another record breaker, this time a world champion; Varanus priscus, commonly known by its antiquated"
+            " genus name Megalania – was the largest terrestrial lizard the world has ever known. Megalania was a goanna"
+            " lizard, a relative of today\'s infamous Komodo dragon, and conservative estimates have predicted that it was"
+            " at least 5.5m long.\n"
+            "\n"
+            "(F) These monster marsupials were not the only giants. Their numbers were swelled by half-tonne birds"
+            " and dinosaur-like tortoises. Although this biological assemblage was truly nightmarish for humans, it"
+            " greatly enriched the Australia\’s fauna and contributed to the world\’s biological diversity. Unfortunately,"
+            " all of these species are extinct nowadays. This fact shows us that even strong, monstrous creatures can"
+            " easily die out. So we need to care about animals that surround us today and don\’t let them disappear as "
+            " it happened to their distant ancestors."
+    </string>
+    <string name="loh_passage_2">
+        A. The Yoruba people of Nigeria classify their towns in two ways. Permanent towns with their own governments are called \“ilu\”, whereas temporary settlements, set up to support work in the country are \“aba\”. Although ilu tend to be larger than aba, the distinction is not one of size, some aba are large, while declining ilu can be small, but of purpose. There is no \“typical\” Yoruba town, but some features are common to most towns.\n\n
+B. In the 19th century most towns were heavily fortified and the foundations of these walls are sometimes visible. Collecting tolls to enter and exit through the walls was a major source of revenue for the old town rulers, as were market fees. The markets were generally located centrally and in small towns, while in large towns there were permanent stands made of corrugated iron or concrete. The market was usually next to the local ruler\’s palace.\n\n
+C. The palaces were often very large. In the 1930\’s, the area of Oyo\’s palace covered 17 acres, and consisted of a series of courtyards surrounded by private and public rooms. After colonisation, many of the palaces were completely or partially demolished. Often the rulers built two storey houses for themselves using some of the palace grounds for government buildings.\n\n
+D. The town is divided into different sections. In some towns these are regular, extending out from the center of the town like spokes on a wheel, while in others, where space is limited, they are more random. The different areas are further divided into compounds called \“ile\”. These vary in size considerably from single dwellings to up to thirty houses. They tend to be larger in the North. Large areas are devoted to government administrative buildings. Newer developments such as industrial or commercial areas or apartment housing for civil servants tends to be build on the edge of the town.\n\n
+E. Houses are rectangular and either have a courtyard in the center or the rooms come off a central corridor. Most social life occurs in the courtyard. They are usually built of hardened mud and have roofs of corrugated iron or, in the countryside, thatch. Buildings of this material are easy to alter, either by knocking down rooms or adding new ones. And can be improved by coating the walls with cement. Richer people often build their houses of concrete blocks and, if they can afford to, build two storey houses. Within compounds there can be quite a mixture of building types. Younger well-educated people may have well furnished houses while their older relatives live in mud walled buildings and sleep on mats on the floor.\n\n
+F. The builder or the most senior man gets a room either near the entrance or, in a two storied house, next to the balcony. He usually has more than one room. Junior men get a room each and there are separate rooms for teenage boys and girls to sleep in. Younger children sleep with their mothers. Any empty room are used as storage, let out or, if they face the street, used as shops.\n</string>
+
+    <string name="loh_passage_3">
+        (A) With upwards of 300 product launches, installations and exhibitions, London\'s annual nine-day design festival is a showcase of head-spinning choice. In many ways that\'s the beauty of the extravaganza, everyone has a different experience and takes something unique away from it. There were however some intriguing themes and trends in this year\'s edition that spoke to larger social or cultural preoccupations.
+
+(B) One was the launch of two consumer electronics products designed to simplify and beautify our technology-addled lives. Both chose the new London Design Festival venue of Somerset House to show their wares. The first was a mobile phone launched by Swiss company Punkt and designed by Jasper Morrison that allows users to make calls and texts only (well, it has an alarm clock and an address book too). Punkt founder Petter Neby doesn\'t believe it will replace your smart phone but suggests users fit it with the same SIM card as your main phone and use it in the evenings, weekends and on holiday.
+
+( C) The other electronics launch came from the unlikely French sibling duo of the Bouroullec brothers. Though tech companies like Samsung are usually prescriptive about their products the Bouroullecs (who admitted they found most TVs sad and ugly) seem to have been given free rein. Their new television for the mega Korean brand looks more like an item of furniture than an ultra-large and ultra-slim piece of tech. More importantly, it comes with simplified on-screen interaction and a \'curtain mode\' that turns your screen into a shimmering pattern during ads or half-time. Again, their focus was on dialing down digital insanity.
+
+(D) Customizable online furniture was also very much in vogue at this year\'s festival. But rest assured, weird and unreliable software or off-the-wall designs sent to a 3D printer somewhere and arriving months later, seem to be a thing of the past. Customization may finally have come of age. Two examples were Scandi-brand Hem that combinded good design by the likes of Luca Nichetto, Form Us With Love and Sylvain Willenz with affordable price points. The fact that the brand opened a pop-up store in Covent Garden during the festival is a recognition of the importance of both physical and online spaces that work seamlessly together.
+
+(E) Another online configurable brand to make its debut after years in development was Warsaw-based Tylko. Like Hem, Tylko has spent time and money on very powerful and easy-to-use software, but with only three designs - a table, a shelf and salt and pepper mills - it has a way to go. Its augmented reality app is simple to use however and its table has been developed with a nano-coating option that really does appear to keep pesky stains at bay. Craft and \'making\' in all its forms was once again a big hit and nowhere more so than at TENT, the East London design event that gets better every year.
+
+(F) A definite highlight was the massive space taken over by the Design &amp; Crafts Council of Ireland and filled with weavers and potters doing their thing and showing their wares. Irish Design had another delectable stand over at the Rochelle School in East London too. The Souvenir Project was a series of nine non-cliché \'souvenirs\' made in Ireland and included a rainbow plate by Nicholas Mosse Pottery that featured rows of animals, flowers and watering cans and commemorated the legalization of same-sex marriage in Ireland in May 2015.
+    </string>
+
+    <string-array name="loh_passage_list">
+        <item>@string/loh_paragraph_1</item>
+        <item>@string/loh_passage_2</item>
+        <item>@string/loh_passage_3</item>
+    </string-array>
+
+    <string name="loh_headings_1">
+        "i. Info on the largest mammal\n"
+            "ii. Reference about Myths and reality \n"
+            "iii. Incredible creatures of Pleistocene Australia \n"
+            "iv. Importance of animal protection\n"
+            "v. Giant lizards\n"
+            "vi. \'Mystery the giants\' disappearance\n"
+    </string>
+    <string name="loh_headings_2">
+        i.	Colonisation\n
+        ii.	Urban divisions\n
+        iii. Architectural home styles\n
+        iv.	The residences of the rulers\n
+        v.	Historical foundations\n
+        vi.	Domestic arrangements\n
+    </string>
+    <string name="loh_headings_3">
+         i.	Examples of customization\n
+        ii.	Unusual keepsakes\n
+        iii. A simple cell phone\n
+        iv.	A strange TV\n
+        v.	Number of products shown on the festival\n
+        vi.	Three designs of a software\n
+    </string>
+
+    <string-array name="loh_heading_list">
+        <item>@string/loh_headings_1</item>
+        <item>@string/loh_headings_2</item>
+        <item>@string/loh_headings_3</item>
+    </string-array>
+
+    <string name="loh_solving_instruction">
+        \nQuestions:\n
+        \nThe reading passage has six paragraphs: i – vi.\n\n
+        Choose the most suitable paragraph headings i – vi from the list of headings on the above.\n\n
+        Select the appropriate numbers (i – vi) in the dropdown lists below
+    </string>
+    <string name="textView_loh_headings_title">Tips of List of Headings</string>
+    
+    <string name="loh_tips_strategy_string">
+        1.	Quickly read through the paragraph headings so you can see what they say.\n
+        2.	Then look at the first paragraph.\n
+        3.	Often only the topic sentence needs to be read carefully because the main idea and answer are there - you may be able to just skim the rest.\n
+        4.	Sometimes, however, the answer is not in the topic sentence and the whole paragraph needs to be read more carefully.\n
+        5.	If a match is not immediately obvious, move on to the next one.\n
+        6.	If you are unsure between two answers at first, put them both in. You may be able to eliminate one answer later if it fits another paragraph better.\n
+        7.	If at the end you are still stuck between two answers for a question, pick which fits best.\n
+    </string>
+
+    <string name="loh_tips_beware_of_passage">
+        1.	There are always more choices of paragraph headings on the list than paragraphs, so be careful when matching them.\n
+        2.	Watch out for synonyms - often words in the paragraphs and paragraph headings will not be the same; they will be synonyms.\n
+        3.	Having a noun from a heading that is in the paragraph does not guarantee they match - you still need to read it carefully to check.\n
+    </string>
+    <string name="btn_now_solve_a_passage">now solve a passage</string>
+    <string name="strategies_to_answer_the_questions">Strategies to answer the questions</string>
+
 </resources>
