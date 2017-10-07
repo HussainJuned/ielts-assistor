@@ -1,5 +1,7 @@
 package com.teamjsnbd.ieltsassistor;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.IdRes;
@@ -15,13 +17,14 @@ import android.widget.Toast;
 
 public class MCQ extends AppCompatActivity{
 
-    private McqLibrary myMcq= new McqLibrary();
+    private McqLibrary myMcq;
 
     private TextView textViewPassage;
     private TextView textViewQuestion;
     private TextView textViewResult;
     private TextView textViewExplanation;
     private TextView textViewExplanationTittle;
+    private TextView textView_MCQ_passage_title;
 
     private RadioGroup radioGroup;
 
@@ -32,11 +35,12 @@ public class MCQ extends AppCompatActivity{
 
     private Button buttonNextQuestion;
 
+    private int fetched_p_number = 1;
     private int correctAnswer = 0;
     private int questonNumber = 0;
     private int passageNumber = 0;
-    private int totalQuestion = myMcq.getTotalQuestionCount(passageNumber);
-    private int totalPassage = myMcq.getTotalPassageCount();
+    private int totalQuestion = 4;
+    private int totalPassage = 3;
     Toolbar toolbar;
 
     @Override
@@ -44,10 +48,14 @@ public class MCQ extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mcq);
 
+        myMcq= new McqLibrary(this);
+
         toolbar=(Toolbar) findViewById(R.id.app_bar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("Practics MCQ Question");
-        getSupportActionBar().setSubtitle("Reading Practics");
+        getSupportActionBar().setTitle("Practice MCQ Question");
+        fetched_p_number = getIntent().getIntExtra("passage_no", 1);
+        getSupportActionBar().setSubtitle("Passage " + fetched_p_number);
+        fetched_p_number--;
 
         if (getSupportActionBar()!=null)
         {
@@ -60,8 +68,7 @@ public class MCQ extends AppCompatActivity{
         textViewResult = (TextView) findViewById(R.id.textViewResult);
         textViewExplanation = (TextView) findViewById(R.id.textViewExplanation);
         textViewExplanationTittle = (TextView) findViewById(R.id.textViewExplanationTittle);
-
-
+        textView_MCQ_passage_title = (TextView) findViewById(R.id.textView_mcq_passage_title);
 
         textViewExplanationTittle.setVisibility(View.GONE);
         textViewExplanation.setVisibility(View.GONE);
@@ -76,15 +83,11 @@ public class MCQ extends AppCompatActivity{
         buttonNextQuestion = (Button) findViewById(R.id.buttonNextQuestion);
 
 
-        if(passageNumber < totalPassage) {
-            textViewPassage.setText(myMcq.getPassage(passageNumber));
+        if(fetched_p_number < totalPassage) {
+            textView_MCQ_passage_title.setText(myMcq.getPassageTitle(fetched_p_number));
+            textViewPassage.setText(myMcq.getPassage(fetched_p_number));
             updateQuestion();
         }
-
-
-
-
-
 
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
@@ -133,7 +136,6 @@ public class MCQ extends AppCompatActivity{
                         }
                         break;
                 }
-
                 setCorrectButtonColor();
             }
         });
@@ -156,21 +158,13 @@ public class MCQ extends AppCompatActivity{
                         choice4.setTextColor(Color.BLACK);
                         textViewExplanationTittle.setVisibility(View.GONE);
                         textViewExplanation.setVisibility(View.GONE);*/
-
-                    } else {
-
-                        if(passageNumber < totalPassage-1) {
-                            passageNumber++;
-                            questonNumber = 0;
-                            totalQuestion = myMcq.getTotalQuestionCount(passageNumber);
-                            textViewPassage.setText(myMcq.getPassage(passageNumber));
-
-                            updateQuestion();
-                        } else {
-                            Toast.makeText(MCQ.this, "No more question", Toast.LENGTH_SHORT).show();
-                            finish();
+                        if(questonNumber == 3) {
+                            buttonNextQuestion.setText("Finish");
                         }
 
+                    } else {
+                        Toast.makeText(MCQ.this, "No more question", Toast.LENGTH_SHORT).show();
+                        finish();
                     }
                 }
 
@@ -212,12 +206,12 @@ public class MCQ extends AppCompatActivity{
 
         radioGroup.clearCheck();
 
-        textViewQuestion.setText(myMcq.getQuestion(passageNumber, questonNumber));
+        textViewQuestion.setText(myMcq.getQuestion(fetched_p_number, questonNumber));
 
-        choice1.setText(myMcq.getChoice1(passageNumber, questonNumber));
-        choice2.setText(myMcq.getChoice2(passageNumber, questonNumber));
-        choice3.setText(myMcq.getChoice3(passageNumber, questonNumber));
-        choice4.setText(myMcq.getChoice4(passageNumber, questonNumber));
+        choice1.setText(myMcq.getChoice1(fetched_p_number, questonNumber));
+        choice2.setText(myMcq.getChoice2(fetched_p_number, questonNumber));
+        choice3.setText(myMcq.getChoice3(fetched_p_number, questonNumber));
+        choice4.setText(myMcq.getChoice4(fetched_p_number, questonNumber));
 
         choice1.setTextColor(Color.BLACK);
         choice2.setTextColor(Color.BLACK);
@@ -228,7 +222,7 @@ public class MCQ extends AppCompatActivity{
         textViewExplanationTittle.setVisibility(View.GONE);
         textViewExplanation.setVisibility(View.GONE);
 
-       correctAnswer = myMcq.getCorrectAnswer(passageNumber, questonNumber);
+        correctAnswer = myMcq.getCorrectAnswer(fetched_p_number, questonNumber);
     }
 
     public void updateResultTextView(boolean correct) {
@@ -237,7 +231,7 @@ public class MCQ extends AppCompatActivity{
         } else {
             textViewResult.setText("Your Answer is Incorrect");
         }
-        textViewExplanation.setText(myMcq.getExplanation(passageNumber, questonNumber));
+        textViewExplanation.setText(myMcq.getExplanation(fetched_p_number, questonNumber));
         textViewExplanationTittle.setVisibility(View.VISIBLE);
         textViewExplanation.setVisibility(View.VISIBLE);
     }

@@ -429,7 +429,7 @@ F. The builder or the most senior man gets a room either near the entrance or, i
         Select the appropriate numbers (i – vi) in the dropdown lists below
     </string>
     <string name="textView_loh_headings_title">Tips of List of Headings</string>
-    
+
     <string name="loh_tips_strategy_string">
         1.	Quickly read through the paragraph headings so you can see what they say.\n
         2.	Then look at the first paragraph.\n
@@ -448,4 +448,62 @@ F. The builder or the most senior man gets a room either near the entrance or, i
     <string name="btn_now_solve_a_passage">now solve a passage</string>
     <string name="strategies_to_answer_the_questions">Strategies to answer the questions</string>
 
+    <string-array name="mcq_passage_list">
+        <item>
+            " In 1983, archaeologists in southern Germany discovered a mass grave containing 34 skeletons."
+            " They included 9 adult males, 7 adult females and 16 children.\n"
+            "\n"  " All of the skeletons showed signs of fatal trauma, including head wounds. None of them showed "
+            "any signs of defensive wounds, suggesting they were killed whilst running away.\n"
+            "\n"  " The \"Talheim Death Pit\" dates from the Stone Age, around 7,000 years ago. It offers some of the"
+            " oldest evidence of organised group violence between two communities: that is, of war.\n"
+            "\n"  " Clearly, humans have been fighting wars for thousands of years, and we may not be the only ones. "
+            "There is growing evidence that several other species also engage in warfare, including our closest relatives "
+            "the chimpanzees.\n"  "\n"  " That suggests we have inherited our predilection for warfare from our ape-like"
+            " ancestors. But not everyone agrees that warfare is inbuilt."
+        </item>
+        <item>
+            There are many grim landmarks in the history of aviation. One in particular stands out. Three decades ago, 720 travellers and crew lost their lives on board commercial aircraft in a single month - more than in any other before or since.\n\n
+The deaths occurred in four separate accidents in August 1985. Each disaster had quite different causes. The aircraft involved ranged from a 747 with hundreds on board to a tiny twin engine turboprop carrying just eight people.\n\n
+There was Japan Air Lines flight 123, the worst single-aircraft accident in history, in which 520 of 524 on board were killed. A further 137 died when Delta flight 191 flew into heavy winds as it approached Dallas-Fort Worth International. A fire on board British Airtours flight 28M at Manchester Airport led to 55 deaths. And all those on board the smallest aircraft, Bar Harbor Airlines flight 1808, lost their lives as it flew into a small airport in Maine, USA.\n\n
+Each, in their own way, had a lasting legacy, whether in the memories of those left bereaved or in changes in technology and procedure introduced as a direct result. The worst death toll was on Japan Air Lines Flight 123, a Boeing 747, which was en route from Tokyo to Osaka on 12 August 1985 when the airtight bulkhead between its cabin and tail tore open. The change in pressure blew off the vertical stabiliser, or tail fin. It also destroyed the hydraulic systems. The plane lurched up and down.\n
+        </item>
+        <item>
+            You\'re running late for work and you\'ve purchased your coffee in a hurry. Just as you arrive at the office, a jet of hot liquid escapes from the tiny hole in the lid, leaving you with hot beverage residue on your clothes before the day has really started.\n\n
+
+This is exactly what happened to Rob Kaczmarek after buying a cup of his favourite caffeinated drink. The marketing director at Convergent Science was intrigued by why the coffee shoots out so far and therefore set about modelling this, initially as a joke for those who enjoy a bit of computational fluid dynamics. It\'s the design of the lid that\'s the problem, he explains.\n\n
+
+\"It happens because of the sloshing of the coffee against the lid, which is kind of unique. At the end of the lid, the hole is right up above that. As the coffee sloshes against the end of the lid, that velocity is amplified and it splashes up through the actual hole.\"\n\n
+
+Not all coffee cups are designed with a hole, of course. Some have lids with a tiny hole and others peel back to reveal a much larger gap, which offsets the shooting jets of hot liquid.\n
+        </item>
+    </string-array>
+
+    <string name="mcq_tips_passage">
+        •	Questions follow the order of the text.\n
+•	Questions repeat key words (or their synonyms) from the text.\n\n
+Multiple choice questions have 3 or 4 answers, only one of which is correct. Usually, there are such types of answers:\n\n
+A.	Irrelevant answer that gives information, which is not stated in the text.\n
+B.	Answer that gives completely opposite information.\n
+C.	Answer that gives information that figures in the text, but not what you\'re asked about.\n
+D.	Correct answer.\n
+    </string>
+    <string name="mcq_tips_strategy">
+        1.	Read the first question and underline the key words.\n
+2.	Read the text from the beginning, simultaneously scanning it for the information that relates to the question.\n
+3.	Once you found the key words or their synonyms in the text - look for the answer (it should be somewhere close).\n
+4.	One you\'ve found the answer, read the next few lines of the text to make sure that it is correct. Also, reread the question.\n
+5.	Repeat this strategy with other questions, but now read the text from the place where you stopped the last time.\n\n
+If you prefer another strategy, you can use it too. Remember: there is no \'right\' strategy for answering IELTS Reading questions. In fact, you can try different answering strategies and figure out which one works the best for you.\n
+    </string>
+
+    <string name="mcq_tips_tips">
+        1.\t	Scan text for the key words and their synonyms.\n
+2.\t	Cross out the answers which are obviously wrong. This will help you to identify the correct answers more quickly.\n
+3.\t	The order of questions can help you. Answer for question 4 will be between answers for questions 3 and 5 in the text.\n
+4.\t	Don\'t rely on your own knowledge, the correct answer contains ONLY information stated in the text.\n
+    </string>
+
+    <string name="mcq_tips_title">
+        Useful information about multiple choice questions:
+    </string>
 </resources>
