@@ -60,7 +60,7 @@ public class TrainReading extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
 
         if (v.getId() == R.id.buttonMCQ) {
-            Intent intent = new Intent(getApplicationContext(), MCQ.class);
+            Intent intent = new Intent(getApplicationContext(), MCQPassageListActivity.class);
             startActivity(intent);
 
             //finish();
