@@ -19,42 +19,42 @@ public class AboutIelts extends AppCompatActivity {
     {
         String about = descriptions[0];
         Intent intent = new Intent(AboutIelts.this, IeltsDescription.class);
-        intent.putExtra("doro", about);
+        intent.putExtra("doro", 0);
         startActivity(intent);
     }
     public void detailslistening(View view)
     {
         String about = descriptions[1];
         Intent intent = new Intent(AboutIelts.this, IeltsDescription.class);
-        intent.putExtra("doro", about);
+        intent.putExtra("doro", 1);
         startActivity(intent);
     }
     public void detailsreading(View view)
     {
         String about = descriptions[2];
         Intent intent = new Intent(AboutIelts.this, IeltsDescription.class);
-        intent.putExtra("doro", about);
+        intent.putExtra("doro", 2);
         startActivity(intent);
     }
     public void detailswriting(View view)
     {
         String about = descriptions[3];
         Intent intent = new Intent(AboutIelts.this, IeltsDescription.class);
-        intent.putExtra("doro", about);
+        intent.putExtra("doro", 3);
         startActivity(intent);
     }
     public void detailsspeaking(View view)
     {
         String about = descriptions[4];
         Intent intent = new Intent(AboutIelts.this, IeltsDescription.class);
-        intent.putExtra("doro", about);
+        intent.putExtra("doro", 4);
         startActivity(intent);
     }
     public void scoreingsystem(View view)
     {
         String about = descriptions[5];
         Intent intent = new Intent(AboutIelts.this, IeltsDescription.class);
-        intent.putExtra("doro", about);
+        intent.putExtra("doro", 5);
         startActivity(intent);
     }
 }

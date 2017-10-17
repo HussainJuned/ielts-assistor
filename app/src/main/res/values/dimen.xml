@@ -7,4 +7,5 @@
     <dimen name="layout_small_margin">10dp</dimen>
     <dimen name="layout_medium_margin">20dp</dimen>
     <dimen name="layout_large_margin">30dp</dimen>
+    <dimen name="reading_buttons_height">40dp</dimen>
 </resources>

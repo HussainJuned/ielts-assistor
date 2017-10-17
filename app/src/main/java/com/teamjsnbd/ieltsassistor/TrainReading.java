@@ -16,6 +16,7 @@ public class TrainReading extends AppCompatActivity implements View.OnClickListe
     private Button buttonSentenceCompletion;
     private Button buttonClassification;
     private Button buttonTrueFalseNG;
+    private Button buttonFullReadingTest;
     Toolbar toolbar;
 
     @Override
@@ -39,12 +40,14 @@ public class TrainReading extends AppCompatActivity implements View.OnClickListe
         buttonSentenceCompletion = (Button)findViewById(R.id.buttonSentenceCompletion);
         buttonClassification = (Button)findViewById(R.id.buttonClassification);
         buttonTrueFalseNG = (Button)findViewById(R.id.buttonTrueFalseNG);
+        buttonFullReadingTest = (Button)findViewById(R.id.buttonFullReadingTest);
 
         buttonMCQ.setOnClickListener(this);
         buttonListOfHeadings.setOnClickListener(this);
         buttonSentenceCompletion.setOnClickListener(this);
         buttonClassification.setOnClickListener(this);
         buttonTrueFalseNG.setOnClickListener(this);
+        buttonFullReadingTest.setOnClickListener(this);
     }
 
     /*Back button */
@@ -83,6 +86,11 @@ public class TrainReading extends AppCompatActivity implements View.OnClickListe
             Intent intent = new Intent(getApplicationContext(), TrueFalsePassagesListActivity.class);
             startActivity(intent);
             Toast.makeText(getApplicationContext(),"Going to True False NG activity", Toast.LENGTH_SHORT).show();
+        }
+        else if(v.getId() == R.id.buttonFullReadingTest){
+            Intent intent = new Intent(getApplicationContext(), RecyclerViewFullReadingTest.class);
+            startActivity(intent);
+           // Toast.makeText(getApplicationContext(),"Going to True False NG activity", Toast.LENGTH_SHORT).show();
         }
 
 

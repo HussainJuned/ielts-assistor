@@ -24,7 +24,7 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SplashScreen"></activity>
+        <activity android:name=".SplashScreen" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -85,7 +85,9 @@
         <activity android:name=".ListOfHeadingsPassageActivity" />
         <activity android:name=".MCQPassageListActivity" />
         <activity android:name=".UsefulInfoOfListOfHeadings" />
-        <activity android:name=".UsefulInfoOfMCQ"></activity>
+        <activity android:name=".UsefulInfoOfMCQ" />
+        <activity android:name=".RecyclerViewFullReadingTest" />
+        <activity android:name=".RTFActivty1"></activity>
     </application>
 
 </manifest>
